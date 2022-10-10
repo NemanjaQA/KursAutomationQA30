@@ -38,7 +38,7 @@ public class LoginPage extends BasePage{
     public void clickOnCreateButton (){
         click(createButtonBy);
     }
-    public void verifyFailedLoginText(String expectedText){
-        assertStringEquals(readText(errorNotificationBy),expectedText);
+        public String readingErrorMessage(){
+        return readText(errorNotificationBy);
     }
 }

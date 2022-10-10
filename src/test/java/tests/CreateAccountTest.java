@@ -2,6 +2,7 @@ package tests;
 
 import dataGenerator.DataCreation;
 import dataGenerator.RegistrationData;
+import methods.AccountMethod;
 import methods.VerifierMethods;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ public class CreateAccountTest extends BaseTest {
 
         String email = DataCreation.email();
         String password = DataCreation.password();
-        CreateAccountPage createAccountPage = new CreateAccountPage(driver);
+        AccountMethod createAccountPage = new AccountMethod(driver);
         VerifierMethods userLoggedInPage = new VerifierMethods(driver);
         createAccountPage.registration(email, password);
         try {

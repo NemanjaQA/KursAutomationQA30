@@ -18,6 +18,5 @@ public class UserLoggedInPage extends BasePage{
     }
     public void verifyUserIsLoggedIn(String expectedText){
         assertStringEquals(readText(signOutButtonBy), expectedText);
-
     }
 }
