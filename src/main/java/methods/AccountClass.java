@@ -22,5 +22,4 @@ public class AccountClass extends CreateAccountPage {
         writeMobilePhone();
         clickOnRegisterButton();
     }
-
 }
