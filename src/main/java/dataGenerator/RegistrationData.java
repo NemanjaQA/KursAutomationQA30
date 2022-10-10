@@ -15,6 +15,7 @@ public class RegistrationData {
     private String state;
 
     public RegistrationData() {
+
     }
 
     public RegistrationData(String firstName, String lastName, String adress, String email, String password, String cityName, String postalCode, String mobilePhone, String state) {
