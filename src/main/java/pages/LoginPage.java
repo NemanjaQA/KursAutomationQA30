@@ -17,7 +17,7 @@ public class LoginPage extends BasePage{
     public void login(String email, String password){
         clickOnSignInButton();
         writeLoginEmail(email);
-        writeText(passwordFieldBy, password);
+        writeLoginPassword(password);
         click(loginButtonBy);
     }
     public void navigateToAccountCreation(String email){
@@ -37,5 +37,8 @@ public class LoginPage extends BasePage{
     }
     public void writeLoginEmail(String email){
         writeText(emailFieldBy, email);
+    }
+    public void writeLoginPassword(String password){
+        writeText(passwordFieldBy, password);
     }
 }
