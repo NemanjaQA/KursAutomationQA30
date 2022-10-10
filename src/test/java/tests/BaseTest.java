@@ -19,7 +19,7 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(new ChromeOptions().addArguments("--disable-notifications", "--start-maximized"));
         //driver.manage().window().maximize();
-        driver.get("http://stagingautomationpractice.com/index.php");
+        driver.get("http://automationpractice.com/index.php");
 
     }
     @AfterMethod

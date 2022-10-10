@@ -17,7 +17,5 @@ public class LoginTest extends BaseTest{
         System.out.println(parameter);
         loginPage.login(PropertyManager.getInstance().getGoodEmail(), PropertyManager.getInstance().getGoodPassword());
         userLoggedInPage.verifyUserIsLoggedIn("Sign out");
-        System.out.println("blabla");
-        System.out.println("blabla");
     }
 }
