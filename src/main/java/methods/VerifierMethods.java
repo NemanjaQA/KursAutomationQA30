@@ -14,7 +14,7 @@ public class VerifierMethods extends BasePage {
     UserLoggedInPage loggedIn = new UserLoggedInPage(driver);
 
     public void verifyFailedLogin(String expectedText){
-        loginPage.verifyFailedLoginText(expectedText);
+        assertStringEquals(loginPage.readingErrorMessage(), expectedText);
     }
     public void verifyUserIsLoggedIn (String expectedText){
         loggedIn.verifyUserIsLoggedIn(expectedText);
