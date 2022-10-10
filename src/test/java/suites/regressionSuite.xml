@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="true" thread-count="6">
+    <test name="Tests">
+        <parameter name="QA30" value="TestParameter"></parameter>
+        <classes>
+            <!--<class name="tests.FailedLoginTest"></class>-->
+            <!--<class name="tests.CreateAccountTest"></class>
+            <class name="tests.LoginTest"></class>
+            <class name="tests_with_login.LogoutTest"></class>
+            <class name="tests_with_login.ChangePersonalInformationTest"></class>
+            <class name="tests_with_login.CheckUsernameTest"></class>-->
+            <class name="tests.LoginTest"></class>
+        </classes>
+    </test>
+</suite>
