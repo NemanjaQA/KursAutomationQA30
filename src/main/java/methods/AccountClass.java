@@ -2,8 +2,9 @@ package methods;
 
 import org.openqa.selenium.WebDriver;
 import pages.AccountPage;
+import pages.CreateAccountPage;
 
-public class AccountClass extends AccountPage {
+public class AccountClass extends CreateAccountPage {
     public AccountClass(WebDriver driver) {
         super(driver);
     }
@@ -19,7 +20,7 @@ public class AccountClass extends AccountPage {
         selectState();
         writePostalCode();
         writeMobilePhone();
-        clickOnCreateButton();
+        clickOnRegisterButton();
     }
 
 }

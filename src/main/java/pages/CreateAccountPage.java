@@ -53,7 +53,7 @@ public class CreateAccountPage extends BasePage {
         writeText(lastNameBy,DataCreation.lastName());
     }
     public void writePassword(String password){
-        writeText(lastNameBy,password);
+        writeText(passwordBy,password);
     }
     public void writeAddress(){
         writeText(addressBy,DataCreation.address());
@@ -70,7 +70,7 @@ public class CreateAccountPage extends BasePage {
     public void writeMobilePhone(){
         writeText(mobilePhoneBy,DataCreation.mobilePhone());
     }
-    public void clickRegisterButton (){
+    public void clickOnRegisterButton (){
         click(registerButtonBy);
     }
 
